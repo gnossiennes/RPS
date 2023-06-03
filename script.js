@@ -31,8 +31,9 @@ const computerChoiceIcon = document.getElementById('computer-choice');
 // const img = document.createElement("img");
 
 // round results
-const playerRoundResult = document.querySelector('.player-round-result');
-const compRoundResult = document.querySelector('comp-round-result')
+const playerScoreNumber = document.querySelector('.player-score-number');
+const compScoreNumber = document.querySelector('.comp-score-number')
+
 
 // set computer choice
 function getComputerChoice() {
@@ -40,7 +41,6 @@ function getComputerChoice() {
     let compNumber = Math.floor(Math.random() * 3);
     return choices[compNumber];
 }
-
 
 // play round
 function playRound(playerChoice) {
@@ -151,17 +151,23 @@ function playRound(playerChoice) {
 function playerWin(playerChoice, computerChoice) {
     playerScore++;
     console.log("win!");
-
+    playerScoreNumber.textContent = `${playerScore}`;
+    compScoreNumber.textContent = `${computerScore}`;
 }
 
 function playerLose(playerChoice, computerChoice) {
     computerScore++;
     console.log("lose!");
+    playerScoreNumber.textContent = `${playerScore}`;
+    compScoreNumber.textContent = `${computerScore}`;
 }
 
 function playerTie(playerChoice, computerChoice) {
     console.log("tie!");
+    playerScoreNumber.textContent = `${playerScore}`;
+    compScoreNumber.textContent = `${computerScore}`;
 }
+
 
 rockButton.addEventListener('click', () => { playRound('rock'); });
 paperButton.addEventListener('click', () => { playRound('paper'); });

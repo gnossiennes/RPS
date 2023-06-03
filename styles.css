@@ -10,52 +10,96 @@ html, body {
     min-height: 100%;
     background: #fff;
     color: #000;
-    font-family: "Noto Color Emoji", arial, sans-serif;
+    font-family: "Noto sans", arial, sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 body {
     display: flex;
     flex-direction: column;
-}
-
-
-img {
-    min-height: 10vw;
-    max-height: 200px;
-    min-width: 10vh;
-    max-width: 200px;
+    align-items: center;
+    gap: 5vh;
 }
 
 .header {
     display: flex;
     text-align: center;
-    font-size: 36px;
-    height: 15vh;
+    font-size: 8vh;
+    font-weight: 800;
+    font-variant-caps: all-small-caps;
     align-items: center;
-    justify-content: center;
 }
-
 
 .button-area {
+    width: 90vw;
     display: flex;
-    justify-content: space-evenly;
-    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5vw;
 }
+
+.outcome-area {
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-variant-caps: all-small-caps;
+    font-weight: 800;
+}
+
+.player-card,.computer-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.comp-score-number,.player-score-number {
+    font-size: 36px;
+}
+
+
+
 
 
 button {
-    font-size: 50px;
-    min-width: 25vw;
-    min-height: 25vw;
     display: flex;
     align-items: center;
     justify-content: center;
+    min-width: 20vw;  
+    min-height: 20vw;
     background-color: transparent;
     border: outset;
     border-radius: 20px;
     border-width: 1vh;
     background-color:hsl(0 0% 98%);
+    padding: 10px;
+    flex: 1 0 0;
 }
+
+img {
+    min-height: 10vh;
+    max-height: 200px;
+    min-width: 10vw;
+    max-width: 200px;
+}
+
+
+
+
+
+
+
+
+
+.player-selection > img {
+    min-width: 50px;
+    min-height: 50px;
+    max-width: 160px;
+    max-height: 160px;
+}
+
 
 #rock:hover {
     transform: scale(1.1) rotate(8deg);
@@ -75,12 +119,6 @@ button {
     background-color:hsl(0 0% 93%)
 }
 
-.outcome-area {
-    display: flex;
-    justify-content: space-evenly;
-    height: 50vh;
-    align-items: center;
-}
 
 .player-choice {
     display: flex;
@@ -107,8 +145,10 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 25vh;
-    width: 25vh;
+    height: 35vw;
+    max-height: 300px;
+    width: 35vw;
+    max-width: 300px;
     border-radius: 20px;
     border-width: 1vh;
     border-style: outset;
@@ -118,11 +158,14 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 25vh;
-    width: 25vh;
+    height: 35vw;
+    max-height: 300px;
+    width: 35vw;
+    max-width: 300px;
     border-radius: 20px;
     border-width: 1vh;
     border-style: outset;
+    padding: 10px;
 }
 
 
