@@ -1,0 +1,67 @@
+:root {
+    background-color:#fff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Noto Color Emoji';
+    src: url(https://raw.githack.com/googlefonts/noto-emoji/main/fonts/NotoColorEmoji.ttf);
+  }
+
+html, body {
+    min-height: 100%;
+    background: #fff;
+    color: #000;
+    font-family: "Noto Color Emoji", arial, sans-serif;
+}
+
+
+.button-area {
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    font-size: 50px;
+    width: 25vw;
+    height: 25vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border-radius: 20px;
+    border-width: 5px;
+}
+
+#rock:hover {
+    transform: scale(1.1) rotate(8deg);
+    transition: 110ms;
+    background-color:hsl(0 0% 95%)
+}
+
+#paper:hover {
+    transform: scale(1.1) rotate(-6deg);
+    transition: 110ms;
+    background-color:hsl(0 0% 95%)
+}
+
+#scissors:hover {
+    transform: scale(1.1) rotate(4deg);
+    transition: 110ms;
+    background-color:hsl(0 0% 95%)
+}
+
+
+.outcome-area {
+    display: flex;
+    justify-content: space-around;
+    height: 50vh;
+    align-items: center;
+}
+
+img {
+    max-width: 100px;
+}

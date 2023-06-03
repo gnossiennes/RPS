@@ -1,75 +1,37 @@
-<script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 
-// This gets the computer choice
-    function getComputerChoice() {
-        let compNumber = Math.floor(Math.random() * 3);
-        if (compNumber == 0) {
-            return "Rock";
-        } else if (compNumber == 1) {
-            return "Paper";
-        } else {
-            return "Scissors";
-        }
-    };
+<body>
+    Pick one:
+    <div class="button-area">
+        <button id="rock" class="player-selection"><img src="rock_1faa8.png" alt="rock"></button>
+        <button id="paper" class="player-selection"><img src="page-with-curl_1f4c3.png" alt="paper"></button>
+        <button id="scissors" class="player-selection"><img src="scissors_2702-fe0f.png" alt="scissors"></button>
+    </div>
 
+    <div class="outcome-area">
+        <div id="player-choice"></div>
+        <div class="vs">vs</div>
+        <div id="computer-choice"></div>
+    </div>
 
-// This assigns the computer choice to the computerSelection variable, and the user prompt to the playerSelection
-    const computerSelection = getComputerChoice()
-    const playerSelection = prompt("Rock, Paper, or Scissors", "choose one");
+    <div class="score-area">
+        <div class="current-round"></div>
+            <div class="player-round-result">player round result</div>
+            <div class="comp-round-result">comp round result</div>
+        <div class="total"></div>
+    </div>
 
+    <script src="script.js">
 
-// This defines a round and how each play wins/loses/ties. This also increments the computerWins / playerWins variables, however, it does not work correctly right now
-    function playRound(player1, player2) {
-        if (player1.toLowerCase() == player2.toLowerCase()) {
-            return "It's a tie!"
-        } else if (player1.toLowerCase() == "rock") {
-            if (player2.toLowerCase() == "paper") {
-                computerWins++;
-                return "You lose! Paper beats Rock";
-            } else {
-                playerWins++;
-                return "You win! Rock beats Scissors!";
-            }
-        } else if (player1.toLowerCase() == "paper") {
-            if (player2.toLowerCase() == "scissors") {
-                computerWins++;
-                return "You lose! Scissors beats Paper";
-            } else {
-                playerWins++;
-                return "You win! Paper beats Rock!";
-            }            
-        } else {
-            if (player2.toLowerCase() == "rock") {
-                computerWins++;
-                return "You lose! Rock beats Scissors";
-            } else {
-                playerWins++;
-                return "You win! Scissors beats Paper!";
-            }   
-        }      
-    };
+    </script>
+</body>
 
-
-// This assigns variables to playerWins and computerWins (which does not currently work correctly)
-
-
-// This defines set game with number of rounds
-    function playGame(game, times) {
-        let playerWins = 0
-        let computerWins = 0      
-    for (let i = 1; i < times; i++) {
-            game(playerSelection, computerSelection)
-        };
-        return "Player total: " + playerWins;
-        return "Computer total: " + computerWins;
-    };
-
-
-// console logs
-    console.log(computerSelection);
-    console.log(playerSelection);
-    console.log(playRound(playerSelection, computerSelection));
-
-    console.log(playGame(playRound, 5));
-
-</script>
+</html>
