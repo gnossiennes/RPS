@@ -13,16 +13,20 @@ html, body {
     font-family: "Noto Color Emoji", arial, sans-serif;
 }
 
-.header {
+body {
     display: flex;
-    text-align: center;
-    font-size: 36px;
-    height: 15vh;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
 }
 
-.vs {
+
+img {
+    min-height: 4vh;
+    max-height: 18vh;
+    min-width: 4vh;
+    max-height: 18vh;
+}
+
+.header {
     display: flex;
     text-align: center;
     font-size: 36px;
@@ -48,7 +52,7 @@ button {
     background-color: transparent;
     border: outset;
     border-radius: 20px;
-    border-width: 5px;
+    border-width: 1vh;
     background-color:hsl(0 0% 98%);
 }
 
@@ -70,10 +74,9 @@ button {
     background-color:hsl(0 0% 93%)
 }
 
-
 .outcome-area {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     height: 50vh;
     align-items: center;
 }
@@ -87,6 +90,7 @@ button {
     gap: 20px;
     color: #000;
 }
+
 
 .computer-choice {
     display: flex;
@@ -102,10 +106,10 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 40vw;
-    min-height: 40vw;
-    border-radius: 50px;
-    border-width: 8px;
+    height: 40vw;
+    width: 40vw;
+    border-radius: 20px;
+    border-width: 1vh;
     border-style: outset;
 }
 
@@ -113,10 +117,10 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 40vw;
-    min-height: 40vw;
-    border-radius: 50px;
-    border-width: 8px;
+    height: 40vw;
+    width: 40vw;
+    border-radius: 20px;
+    border-width: 1vh;
     border-style: outset;
 }
 
