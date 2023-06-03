@@ -51,46 +51,94 @@ function playRound(playerChoice) {
         case 'rockscissors':
             playerChoiceIcon.innerHTML = `<img src="rock_1faa8.png" alt="rock">`;
             computerChoiceIcon.innerHTML = `<img src="scissors_2702-fe0f.png" alt="scissors">`;
+            playerChoiceIcon.style = `background: conic-gradient(
+                hsl(65, 90%, 50%),
+                hsl(320, 90%, 50%),
+                hsl(160, 90%, 50%),
+                hsl(65, 90%, 50%)
+            );`
+            computerChoiceIcon.style = `background: #fff;`
             playerWin(playerChoice, computerChoice);
             break;
         case 'paperrock':
             playerChoiceIcon.innerHTML = `<img src="page-with-curl_1f4c3.png" alt="paper">`;
             computerChoiceIcon.innerHTML = `<img src="rock_1faa8.png" alt="rock">`;
+            playerChoiceIcon.style = `background: conic-gradient(
+                hsl(65, 90%, 50%),
+                hsl(320, 90%, 50%),
+                hsl(160, 90%, 50%),
+                hsl(65, 90%, 50%)
+            );`
+            computerChoiceIcon.style = `background: #fff;`
             playerWin(playerChoice, computerChoice);
             break;
         case 'scissorspaper':
             playerChoiceIcon.innerHTML = `<img src="scissors_2702-fe0f.png" alt="scissors">`;
             computerChoiceIcon.innerHTML = `<img src="page-with-curl_1f4c3.png" alt="paper">`;
+            playerChoiceIcon.style = `background: conic-gradient(
+                hsl(65, 90%, 50%),
+                hsl(320, 90%, 50%),
+                hsl(160, 90%, 50%),
+                hsl(65, 90%, 50%)
+            );`
+            computerChoiceIcon.style = `background: #fff;`
             playerWin(playerChoice, computerChoice);
             break;
         case 'rockpaper':
             playerChoiceIcon.innerHTML = `<img src="rock_1faa8.png" alt="rock">`;
             computerChoiceIcon.innerHTML = `<img src="page-with-curl_1f4c3.png" alt="paper">`;
+            computerChoiceIcon.style = `background: conic-gradient(
+                hsl(65, 90%, 50%),
+                hsl(320, 90%, 50%),
+                hsl(160, 90%, 50%),
+                hsl(65, 90%, 50%)
+            );`
+            playerChoiceIcon.style = `background: #fff;`
             playerLose(playerChoice, computerChoice);
             break;
         case 'paperscissors':
             playerChoiceIcon.innerHTML = `<img src="page-with-curl_1f4c3.png" alt="paper">`;
             computerChoiceIcon.innerHTML = `<img src="scissors_2702-fe0f.png" alt="scissors">`;
+            computerChoiceIcon.style = `background: conic-gradient(
+                hsl(65, 90%, 50%),
+                hsl(320, 90%, 50%),
+                hsl(160, 90%, 50%),
+                hsl(65, 90%, 50%)
+            );`
+            playerChoiceIcon.style = `background: #fff;`
             playerLose(playerChoice, computerChoice);
             break;
         case 'scissorsrock':
             playerChoiceIcon.innerHTML = `<img src="scissors_2702-fe0f.png" alt="scissors">`;
             computerChoiceIcon.innerHTML = `<img src="rock_1faa8.png" alt="rock">`;
+            computerChoiceIcon.style = `background: conic-gradient(
+                hsl(65, 90%, 50%),
+                hsl(320, 90%, 50%),
+                hsl(160, 90%, 50%),
+                hsl(65, 90%, 50%)
+            );`
+            playerChoiceIcon.style = `background: #fff;`
             playerLose(playerChoice, computerChoice);
             break;
         case 'rockrock':
             playerChoiceIcon.innerHTML = `<img src="rock_1faa8.png" alt="rock">`;
             computerChoiceIcon.innerHTML = `<img src="rock_1faa8.png" alt="rock">`;
+            playerChoiceIcon.style = `background: #fff;`
+            computerChoiceIcon.style = `background: #fff;`
             playerTie(playerChoice, computerChoice);
             break;
         case 'paperpaper':
             playerChoiceIcon.innerHTML = `<img src="page-with-curl_1f4c3.png" alt="paper">`;
             computerChoiceIcon.innerHTML = `<img src="page-with-curl_1f4c3.png" alt="paper">`;
+            playerChoiceIcon.style = `background: #fff;`
+            computerChoiceIcon.style = `background: #fff;`
             playerTie(playerChoice, computerChoice);
             break;
         case 'scissorsscissors':
             playerChoiceIcon.innerHTML = `<img src="scissors_2702-fe0f.png" alt="scissors">`;
             computerChoiceIcon.innerHTML = `<img src="scissors_2702-fe0f.png" alt="scissors">`;
+            playerChoiceIcon.style = `background: #fff;`
+            computerChoiceIcon.style = `background: #fff;`
             playerTie(playerChoice, computerChoice);
             break;
     }

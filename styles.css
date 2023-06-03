@@ -62,6 +62,29 @@ button {
     align-items: center;
 }
 
+#player-choice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    box-shadow: inset 5px 5px 20px;
+}
+
+#computer-choice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    box-shadow: inset 5px 5px 20px;
+}
+
+
+
+
 img {
     max-width: 100px;
 }
