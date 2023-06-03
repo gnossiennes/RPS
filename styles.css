@@ -76,6 +76,24 @@ button {
     align-items: center;
 }
 
+.player-choice {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 24px;
+    justify-content: center;
+    gap: 20px;
+}
+
+.computer-choice {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 24px;
+    justify-content: center;
+    gap: 20px;
+}
+
 #player-choice {
     display: flex;
     justify-content: center;
