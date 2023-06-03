@@ -83,6 +83,7 @@ button {
     font-size: 24px;
     justify-content: center;
     gap: 20px;
+    color: #000;
 }
 
 .computer-choice {
@@ -92,6 +93,7 @@ button {
     font-size: 24px;
     justify-content: center;
     gap: 20px;
+    color: #000;
 }
 
 #player-choice {
