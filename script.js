@@ -49,8 +49,8 @@ function playRound(playerChoice) {
     console.log(computerChoice);
     switch (playerChoice + computerChoice) {
         case 'rockscissors':
-            playerChoiceIcon.innerHTML = `<img src="rock_1faa8.png" alt="rock">`;
-            computerChoiceIcon.innerHTML = `<img src="scissors_2702-fe0f.png" alt="scissors">`;
+            playerChoiceIcon.innerHTML = `<img src="rock_1faa8.png" alt="rock" style = "min-width: 10vh">`;
+            computerChoiceIcon.innerHTML = `<img src="scissors_2702-fe0f.png" alt="scissors" style = "min-width: 10vh">`;
             playerChoiceIcon.style = `background: conic-gradient(
                 hsl(65, 90%, 50%),
                 hsl(320, 90%, 50%),
@@ -61,8 +61,8 @@ function playRound(playerChoice) {
             playerWin(playerChoice, computerChoice);
             break;
         case 'paperrock':
-            playerChoiceIcon.innerHTML = `<img src="page-with-curl_1f4c3.png" alt="paper">`;
-            computerChoiceIcon.innerHTML = `<img src="rock_1faa8.png" alt="rock">`;
+            playerChoiceIcon.innerHTML = `<img src="page-with-curl_1f4c3.png" alt="paper" style = "min-width: 10vh">`;
+            computerChoiceIcon.innerHTML = `<img src="rock_1faa8.png" alt="rock" style = "min-width: 10vh">`;
             playerChoiceIcon.style = `background: conic-gradient(
                 hsl(65, 90%, 50%),
                 hsl(320, 90%, 50%),
@@ -73,8 +73,8 @@ function playRound(playerChoice) {
             playerWin(playerChoice, computerChoice);
             break;
         case 'scissorspaper':
-            playerChoiceIcon.innerHTML = `<img src="scissors_2702-fe0f.png" alt="scissors">`;
-            computerChoiceIcon.innerHTML = `<img src="page-with-curl_1f4c3.png" alt="paper">`;
+            playerChoiceIcon.innerHTML = `<img src="scissors_2702-fe0f.png" alt="scissors" style = "min-width: 10vh">`;
+            computerChoiceIcon.innerHTML = `<img src="page-with-curl_1f4c3.png" alt="paper" style = "min-width: 10vh">`;
             playerChoiceIcon.style = `background: conic-gradient(
                 hsl(65, 90%, 50%),
                 hsl(320, 90%, 50%),
@@ -85,8 +85,8 @@ function playRound(playerChoice) {
             playerWin(playerChoice, computerChoice);
             break;
         case 'rockpaper':
-            playerChoiceIcon.innerHTML = `<img src="rock_1faa8.png" alt="rock">`;
-            computerChoiceIcon.innerHTML = `<img src="page-with-curl_1f4c3.png" alt="paper">`;
+            playerChoiceIcon.innerHTML = `<img src="rock_1faa8.png" alt="rock" style = "min-width: 10vh">`;
+            computerChoiceIcon.innerHTML = `<img src="page-with-curl_1f4c3.png" alt="paper" style = "min-width: 10vh">`;
             computerChoiceIcon.style = `background: conic-gradient(
                 hsl(65, 90%, 50%),
                 hsl(320, 90%, 50%),
@@ -97,8 +97,8 @@ function playRound(playerChoice) {
             playerLose(playerChoice, computerChoice);
             break;
         case 'paperscissors':
-            playerChoiceIcon.innerHTML = `<img src="page-with-curl_1f4c3.png" alt="paper">`;
-            computerChoiceIcon.innerHTML = `<img src="scissors_2702-fe0f.png" alt="scissors">`;
+            playerChoiceIcon.innerHTML = `<img src="page-with-curl_1f4c3.png" alt="paper" style = "min-width: 10vh">`;
+            computerChoiceIcon.innerHTML = `<img src="scissors_2702-fe0f.png" alt="scissors" style = "min-width: 10vh">`;
             computerChoiceIcon.style = `background: conic-gradient(
                 hsl(65, 90%, 50%),
                 hsl(320, 90%, 50%),
@@ -109,8 +109,8 @@ function playRound(playerChoice) {
             playerLose(playerChoice, computerChoice);
             break;
         case 'scissorsrock':
-            playerChoiceIcon.innerHTML = `<img src="scissors_2702-fe0f.png" alt="scissors">`;
-            computerChoiceIcon.innerHTML = `<img src="rock_1faa8.png" alt="rock">`;
+            playerChoiceIcon.innerHTML = `<img src="scissors_2702-fe0f.png" alt="scissors" style = "min-width: 10vh">`;
+            computerChoiceIcon.innerHTML = `<img src="rock_1faa8.png" alt="rock" style = "min-width: 10vh">`;
             computerChoiceIcon.style = `background: conic-gradient(
                 hsl(65, 90%, 50%),
                 hsl(320, 90%, 50%),
@@ -121,22 +121,22 @@ function playRound(playerChoice) {
             playerLose(playerChoice, computerChoice);
             break;
         case 'rockrock':
-            playerChoiceIcon.innerHTML = `<img src="rock_1faa8.png" alt="rock">`;
-            computerChoiceIcon.innerHTML = `<img src="rock_1faa8.png" alt="rock">`;
+            playerChoiceIcon.innerHTML = `<img src="rock_1faa8.png" alt="rock" style = "min-width: 10vh">`;
+            computerChoiceIcon.innerHTML = `<img src="rock_1faa8.png" alt="rock" style = "min-width: 10vh">`;
             playerChoiceIcon.style = `background: #fff;`
             computerChoiceIcon.style = `background: #fff;`
             playerTie(playerChoice, computerChoice);
             break;
         case 'paperpaper':
-            playerChoiceIcon.innerHTML = `<img src="page-with-curl_1f4c3.png" alt="paper">`;
-            computerChoiceIcon.innerHTML = `<img src="page-with-curl_1f4c3.png" alt="paper">`;
+            playerChoiceIcon.innerHTML = `<img src="page-with-curl_1f4c3.png" alt="paper" style = "min-width: 10vh">`;
+            computerChoiceIcon.innerHTML = `<img src="page-with-curl_1f4c3.png" alt="paper" style = "min-width: 10vh">`;
             playerChoiceIcon.style = `background: #fff;`
             computerChoiceIcon.style = `background: #fff;`
             playerTie(playerChoice, computerChoice);
             break;
         case 'scissorsscissors':
-            playerChoiceIcon.innerHTML = `<img src="scissors_2702-fe0f.png" alt="scissors">`;
-            computerChoiceIcon.innerHTML = `<img src="scissors_2702-fe0f.png" alt="scissors">`;
+            playerChoiceIcon.innerHTML = `<img src="scissors_2702-fe0f.png" alt="scissors" style = "min-width: 10vh">`;
+            computerChoiceIcon.innerHTML = `<img src="scissors_2702-fe0f.png" alt="scissors" style = "min-width: 10vh">`;
             playerChoiceIcon.style = `background: #fff;`
             computerChoiceIcon.style = `background: #fff;`
             playerTie(playerChoice, computerChoice);

@@ -37,10 +37,11 @@ html, body {
     justify-content: space-around;
 }
 
+
 button {
     font-size: 50px;
-    width: 25vw;
-    height: 25vw;
+    width: 30vw;
+    height: 30vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -48,24 +49,25 @@ button {
     border: outset;
     border-radius: 20px;
     border-width: 5px;
+    background-color:hsl(0 0% 98%);
 }
 
 #rock:hover {
     transform: scale(1.1) rotate(8deg);
     transition: 110ms;
-    background-color:hsl(0 0% 95%)
+    background-color:hsl(0 0% 93%)
 }
 
 #paper:hover {
     transform: scale(1.1) rotate(-6deg);
     transition: 110ms;
-    background-color:hsl(0 0% 95%)
+    background-color:hsl(0 0% 93%)
 }
 
 #scissors:hover {
     transform: scale(1.1) rotate(4deg);
     transition: 110ms;
-    background-color:hsl(0 0% 95%)
+    background-color:hsl(0 0% 93%)
 }
 
 
@@ -100,8 +102,8 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30vh;
-    height: 30vh;
+    min-width: 40vw;
+    min-height: 40vw;
     border-radius: 50px;
     border-width: 8px;
     border-style: outset;
@@ -111,8 +113,8 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30vh;
-    height: 30vh;
+    min-width: 40vw;
+    min-height: 40vw;
     border-radius: 50px;
     border-width: 8px;
     border-style: outset;
